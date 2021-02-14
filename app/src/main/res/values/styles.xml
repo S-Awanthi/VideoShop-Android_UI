@@ -1,0 +1,12 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#ccffdd</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#1a0d00</item>
+        <item name="actionBarSize">50dip</item>
+        <item name="android:actionBarSize">50dip</item>
+
+    </style>
+</resources>

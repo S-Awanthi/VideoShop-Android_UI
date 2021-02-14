@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"><font color="#000000">3Star Video Shop</font>></string>
+
+    <!--    Entries of the Spinner drop down for age-group-->
+    <string-array name="age_group">
+
+        <item><font color="#ffffff">10 - 17 years </font></item>
+        <item><font color="#ffffff">18 - 40 years </font></item>
+        <item><font color="#ffffff">41 - 60 years </font></item>
+        <item><font color="#ffffff">61 - 100 years </font></item>
+    </string-array>
+
+</resources>

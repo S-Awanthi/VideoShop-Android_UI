@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    ALERT BUTTON OF INTERESTS (EFFECT WHEN PRESS) -->
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="60dip" />
+            <stroke android:width="1dip" android:color="#ffffff"/>
+            <gradient android:startColor="#000000"/>
+        </shape>
+    </item>
+
+
+    <!--     ALERT BUTTON OF INTERESTS (EFFECT BEFORE PRESS) -->
+    <item>
+        <shape android:shape="rectangle"  >
+            <corners android:radius="60dip" />
+            <stroke android:width="1dip" android:color="#ffffcc" />
+            <gradient android:endColor="#000000"/>
+        </shape>
+    </item>
+
+</selector>

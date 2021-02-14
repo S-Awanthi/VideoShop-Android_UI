@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:padding="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!--    Top label and Image-->
+        <TextView
+            android:id="@+id/label"
+            android:background="@drawable/reg"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--    Name Field-->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center_vertical"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label" />
+
+        <!--    DOB Field-->
+        <EditText
+            android:id="@+id/dobInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Date of Birth"
+            android:inputType="textPersonName"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+        <!--    Address field-->
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Address"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dobInput" />
+
+        <!--    NIC field-->
+        <EditText
+            android:id="@+id/nicInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="NIC Number"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressInput" />
+
+        <!--    Gender field-->
+        <TextView
+            android:id="@+id/genderTxt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical"
+            android:text=" Gender         :"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nicInput" />
+
+        <!--    Radio Button Group-->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/genderTxt"
+            app:layout_constraintTop_toBottomOf="@+id/nicInput">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffcc"
+                android:text="Male"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:buttonTint="#ffffcc"
+                android:text="Female"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!--    Age group field-->
+        <TextView
+            android:id="@+id/age_groupTxt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical"
+            android:text=" Age group   :"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTxt" />
+
+        <!--    Age group dropdown spinner-->
+        <Spinner
+            android:id="@+id/age_prompt"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#ffffcc"
+            android:entries="@array/age_group"
+            android:popupBackground="#000000"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/age_groupTxt"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <!--    Interests field-->
+        <TextView
+            android:id="@+id/interestsTxt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text=" Interests      :"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:inputType="text|textMultiLine"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_groupTxt">
+
+        </TextView>
+
+        <!--    Alert box Button for interested field-->
+        <Button
+            android:id="@+id/alertBtn"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mybtnalert"
+            android:gravity="center"
+            android:text="Select from Here!"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/interestsTxt"
+            app:layout_constraintTop_toBottomOf="@+id/age_groupTxt">
+
+        </Button>
+
+        <!--    Output of the alert dialog-->
+        <TextView
+            android:id="@+id/outputAlert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:inputType="text|textMultiLine"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:lineHeight="5dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alertBtn">
+
+        </TextView>
+
+        <!--    Save button-->
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="  Save  "
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:background="@drawable/mybtnsave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outputAlert"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
